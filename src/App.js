@@ -4,6 +4,7 @@ import validator from 'validator'
 const App = () => { 
 
 	const [errorMessage, setErrorMessage] = useState('') 
+	
 
 	const validate = (value) => { 
 
@@ -19,7 +20,7 @@ const App = () => {
 
 	return ( 
 		<div style={{ 
-			marginLeft: '450px', 
+			marginLeft: '450px', font:"initial",
 			
 		}}> 
 
@@ -36,13 +37,14 @@ const App = () => {
 					}}>{errorMessage}</span>} 
 			</pre> 
 			
-			<h4>Note:<br></br>1. Password should have at least one numerical digit(0-9). 
+			<h4 style={{}}>Note:<br></br>1. Password should have at least one numerical digit(0-9). 
 			<br></br> 2. Password's length should be in between 8 to 15 characters.
 			<br></br>3. Password should have at least one lowercase letter(a-z).
 			<br></br>4. Password should have at least one uppercase letter(A-Z). 
 			<br></br>5. Password should have at least one special character ( @, #, %, &, !, $, *).</h4>
 			
 		</div> 
+		
 	); 
 } 
 
