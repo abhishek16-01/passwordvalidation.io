@@ -20,15 +20,15 @@ const App = () => {
 
 	return ( 
 		<div style={{ 
-			marginLeft: '450px', font:"initial",
+			marginLeft: '450px', font:"initial"
 			
 		}}> 
 
 		
 			<pre> 
-				<h1>Password Validation </h1>
-				<h1>Checking Password Strength in ReactJS</h1> 
-				<h2>Enter Password: </h2><input type="text" 
+				<h1 style={{textTransform:"uppercase",fontSize:"40px"}}>Password Validation </h1>
+				<h1 style={{textTransform:"uppercase",fontSize:"33px"}}>Checking Password Strength in ReactJS</h1> 
+				<h2>Enter Password: </h2><input type="text" style={{boxSizing:"content-box"}}
 					onChange={(e) => validate(e.target.value)}></input> <br /> 
 				{errorMessage === '' ? null : 
 					<span style={{ 
